@@ -1,4 +1,4 @@
-const { expandCronField, cronParser } = require('./index')
+const { expandCronField, cronParser } = require('./parsers')
 
 describe.only("expandCronField function", () => {
 	test("handles single input", () => {

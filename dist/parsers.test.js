@@ -1,4 +1,4 @@
-const { expandCronField, cronParser } = require('./index');
+const { expandCronField, cronParser } = require('./parsers');
 describe.only("expandCronField function", () => {
     test("handles single input", () => {
         expect(expandCronField("12", 0, 60)).toEqual([12]);
@@ -41,4 +41,4 @@ describe("cronParser", () => {
         }).toThrow("Invalid cron expression");
     });
 });
-//# sourceMappingURL=index.test.js.map
+//# sourceMappingURL=parsers.test.js.map
